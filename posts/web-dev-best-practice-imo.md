@@ -3,15 +3,15 @@
 ## 前提
 这份最佳实践，针对的是个人/小团队的web端敏捷开发，适合个人或者小团队迅速完成前端、客户端、后台等一系列产品，而没有针对高并发场景。
 
-开发者需要了解前端开发的基本知识，了解HTML / CSS / JavaScript, 要了解ES6语法以及node。
+开发者需要了解前端开发的基本知识，了解HTML / CSS / JavaScript，要了解ES6语法以及node。
 
 > 在高并发场景中，后端需要引入微服务技术，通过微服务框架(如 `istio / linkerd / dubbo`)等结合服务网格技术(service mesh)来支持服务发现、负载均衡、流量控制等功能，再通过统一的api gateway对外进行服务，并以docker及k8s作为资源调度层。这部分内容不是本文的主题。
 >
 > 对于`graphql`, `serverless`等技术，会通过专门的文章来说明。由于这篇最佳实践是针对当前环境，尽管这些技术很优秀，但是当前还不够成熟，因此我暂时不将它们归入最佳实践。
 
-## 总体技术栈
+## 技术栈
 * 前端页面采用诸如`react/vue`等框架编写**SPA**，通过webpack等编译打包工具打包成静态资源，部署在web服务器上。
-* web服务器使用nginx,S3等。
+* web服务器使用nginx, S3等。
 * 后台api服务器采用node编写，可以使用`express/koa2/egg`等。本实践中采用egg作为api server，主要是考虑到egg提供的约束使得开发过程更少走坑。
 * 数据库采用开源数据库mysql。
 
@@ -24,10 +24,10 @@
 ## 前端
 * React
   - [React](https://reactjs.org/)是 Facebook 开源的一套前端开发框架，与vue作为当前最流行的前端框架。核心原理是将网页页面拆分成一系列组件，通过操作组件的状态来管理页面的渲染。
-* Ant-Design (pro)
-  - [Ant-Design](https://ant.design)是由阿里巴巴-蚂蚁金服开源的一套前端组件库，它构建于React之上，通过React提供的组件化和状态管理特性，实现了一套颜值很高的UI组件库(感谢FB大佬给前端带来了福音)。Ant-Design在React中扮演的是**Component**(组件)的角色，开发者亦可基于这些组件构建出更上层的组件，并通过组合这些组件，来表现出页面。
+* Ant-Design / Pro
+  - [Ant-Design](https://ant.design)是由阿里巴巴-蚂蚁金服开源的一套前端组件库，它构建于React之上，通过React提供的组件化和状态管理特性，实现了一套颜值很高的UI组件库(再次感谢FB大佬给前端带来了福音)。Ant-Design在React中扮演的是**Component**(组件)的角色，开发者亦可基于这些组件构建出更上层的组件，并通过组合这些组件，来表现出页面。
   - [Ant-Design-Pro](https://pro.ant.design/)是蚂蚁金服基于 Ant-Design 推出的官方后台管理案例，给我们提供了很好的示范。
-* Redux (dva)
+* Redux / Dva
   - React专注的是组件内部的状态管理，并不擅于全局状态管理，因此需要引入状态管理库。Facebook推出的`Flux`架构通过单向数据流的思想，增强了前端框架的状态管理能力。
   - [Redux](https://redux.js.org/)是Flux的一种实现和改进，并吸取了`Elm`之长。用官方的话来说：
     - > Redux is a predictable state container for JavaScript apps.
@@ -36,7 +36,7 @@
 * umi
   - [umi](https://umijs.org/)可以理解为React框架的**脚手架**，它整合了react/webpack/react-router/babel/dva等框架，让开发者采用插件与配置的方式来进行前端开发。
     - > umi十分类似vue中的next.js
-    - > [create-react-app](https://github.com/facebook/create-react-app)同样是一款优秀的react脚手架，之所以选用umi，主要是因为它整合了dva,路由等框架，用起来更方便。
+    - > [create-react-app](https://github.com/facebook/create-react-app)同样是一款优秀的react脚手架，之所以选用umi，主要是因为它整合了dva，路由等框架，用起来更方便。
     - > emmmmm....，好吧，主要是因为任性。
 
 ## web server
