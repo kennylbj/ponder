@@ -20,7 +20,10 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
 
 * PPI计算
   - 理论上，PPI可以根据屏幕的尺寸大小和屏幕像素计算而来，屏幕尺寸与ppi都以对角线来计算，其计算公式是：
-  <img src="../../images/ppi.jpg" alt="ppi" width="500"/>
+<div align="center">
+  <img src="../../images/ppi.jpg" alt="ppi" width="600"/>
+</div>
+
   - 其中：
     - dp是对角线像素
     - wp是宽边像素
@@ -28,7 +31,9 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
     - di是对角线英寸，即屏幕英寸大小
 * 举个栗子
   - 以65寸的4K屏为例：
-  - <img src="../../images/ppi-example.jpg" alt="ppi-example" width="400"/>
+<div align="center">
+  <img src="../../images/ppi-example.jpg" alt="ppi-example" width="400"/>
+</div>  
 
 ## Retina Resolution
 这就是传说中的[视网膜分辨率](https://en.wikipedia.org/wiki/Retina_display#cite_note-npr_info_1-1)了。该次出自于苹果公司，用来代表着超高分辨率屏幕。之所以叫做视网膜分辨率，是指在这种像素下，人类肉眼已经无法分辨出单独像素了。
@@ -50,6 +55,10 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
 举个栗子：
 > 65英寸4K电视的Retina观看距离是多少呢？
 * 首先求出65英寸4K电视的PPI为67.8
-* 带入公式：<img src="../../images/tv.jpg" alt="retina" width="200"/>
+* 带入公式：
+<div align="center">
+  <img src="../../images/tv.jpg" alt="retina" width="200"/>
+</div> 
+
 * 求出d=50英寸，约为1.27米。
 也就是说，在1.27米之外，肉眼已经无法分辨出65寸4K电视的单独像素了！
