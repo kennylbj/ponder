@@ -24,11 +24,12 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
   <img src="../../images/ppi.jpg" alt="ppi" width="600"/>
 </div>
 
-  - 其中：
-    - dp是对角线像素
-    - wp是宽边像素
-    - hp是高边像素
-    - di是对角线英寸，即屏幕英寸大小
+* 其中
+  - dp是对角线像素
+  - wp是宽边像素
+  - hp是高边像素
+  - di是对角线英寸，即屏幕英寸大小
+
 * 举个栗子
   - 以65寸的4K屏为例：
 <div align="center">
@@ -36,7 +37,7 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
 </div>  
 
 ## Retina Resolution
-这就是传说中的[视网膜分辨率](https://en.wikipedia.org/wiki/Retina_display#cite_note-npr_info_1-1)了。该次出自于苹果公司，用来代表着超高分辨率屏幕。之所以叫做视网膜分辨率，是指在这种像素下，人类肉眼已经无法分辨出单独像素了。
+这就是传说中的[视网膜分辨率](https://en.wikipedia.org/wiki/Retina_display#cite_note-npr_info_1-1)了。该词出自于苹果公司，用来代表着超高分辨率屏幕。之所以叫做视网膜分辨率，是指在这种像素下，人类肉眼已经无法分辨出单独像素了。
 > "Retina displays have a pixel density that's so high, your eyes can't discern individual pixels at a normal viewing distance. This gives content incredible detail and dramatically improves your viewing experience."
 
 在iPhone4发布会上，乔老爷说过：
@@ -46,6 +47,7 @@ PPI全称为[Pixels Per Inch](https://en.wikipedia.org/wiki/Pixel_density)，即
 <div align="center">
   <img src="../../images/retina.jpg" alt="retina" width="200"/>
 </div>
+
 其中：
 - PPI为上述所描述的单位像素值
 - d为肉眼与屏幕的距离，单位为英寸
