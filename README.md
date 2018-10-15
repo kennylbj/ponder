@@ -3,7 +3,10 @@
 > Alright, it's just my personal blog.
 
 ## Web
-* [best practice for web development in my opinion](./posts/web/web-dev-best-practice-imo.md)
+* [Best Practice For Web Development In My Opinion](./posts/web/web-dev-best-practice-imo.md)
+
+## Essays
+* [Resolution](./posts/essays/resolution.md)
 
 ## License
 [WLFPL](./LICENSE)
